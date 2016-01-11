@@ -7,6 +7,5 @@ function [D] = ReadLC(input)
 %**FIRST LINE IS ASSUMED TO BE FREE OF DATA**
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 D = dlmread(input,' ',1,0);
-D(1,:) = [];
 return;
 
