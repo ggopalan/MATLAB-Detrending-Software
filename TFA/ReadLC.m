@@ -5,12 +5,8 @@ function [m, s, dates] = ReadLC(input)
 %2 and uncertainty in column 3.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 D = dlmread(input,' ',1,0);
-
 dates = D(:,1);
-dates = dates(2:size(dates));
 m = D(:,2);
-m = m(2:size(m));
 s = D(:,3);
-s = s(2:size(s));
 return;
 
