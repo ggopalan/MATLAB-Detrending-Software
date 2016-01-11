@@ -4,7 +4,7 @@ function [m, s, dates] = ReadLC(input)
 %and vector s of uncertainties. It is assumed that brightness is in column
 %2 and uncertainty in column 3.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-D = dlmread(input);
+D = dlmread(input,' ',1,0);
 
 dates = D(:,1);
 dates = dates(2:size(dates));
