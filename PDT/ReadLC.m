@@ -6,7 +6,7 @@ function [D] = ReadLC(input)
 %be used in detrending. 
 %**FIRST LINE IS ASSUMED TO BE FREE OF DATA**
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-D = dlmread(input);
+D = dlmread(input,' ',1,0);
 D(1,:) = [];
 return;
 
